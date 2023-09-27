@@ -1,0 +1,75 @@
+.Track {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+}
+
+.Track-action {
+  cursor: pointer;
+  padding: .5rem;
+  font-size: 1.05rem;
+  transition: color .25s;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.Track-action:hover {
+  color: rgba(265, 265, 265, .5);
+}
+
+.Track-information {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 72px;
+}
+
+.Track-information h3 {
+  margin-bottom: .22rem;
+}
+
+.Track-information p {
+  font-size: .83rem;
+  font-weight: 300;
+  color: rgba(256, 256, 256, 0.8);
+}
+
+
+audio {
+  display: flex;
+  flex-direction: row;
+}
+
+audio::-webkit-media-controls-panel {
+  padding: 10px 10px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #FC9E4F;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #FC9E4F;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #FC9E4F;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #FC9E4F;
+}
+
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #FC9E4F;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
